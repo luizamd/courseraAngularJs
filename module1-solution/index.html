@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="LunchCheck">
+    <div ng-controller="LunchCheckController">
+        <h1>Check my Lunch</h1>
+
+        <label for="itens">My Lunch Itens (separated by comma):</label>
+        <input type="text" id="itens" ng-model="strItens" ng-keyup="exibeConsole()" />
+
+        <p>{{mensagem}}</p>
+
+        <input type="button" value="Check if too much" ng-click="exibeMsg()" />
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html ng-app="LunchCheck">
+<head>
+  <script src="js/angular.min.js" />
+  <script src="js/app.js" />
+</head>
+<body ng-controller="LunchCheckController">
+  <h1>Check my Lunch</h1>
+
+  <label for="itens">My Lunch Itens (separated by comma):</label>
+  <input type="text" id="itens" ng-model="strItens" />
+
+  <p>{{mensagem}}</p>
+
+  <input type="button" value="Check if too much" ng-click="exibeMsg()" />
+</body>
+</html> -->
